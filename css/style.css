@@ -1,0 +1,155 @@
+body {
+	margin:0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.header-arrow {
+	position: absolute;
+	top: 2px;
+	left: 50%;
+	margin-left: -38px;
+	height: 105px;
+	width: 35px;
+	transform: rotate(45deg);
+	background-color: #fff;
+	margin-bottom:5px;
+}
+
+.row.ha{
+    margin-bottom: 23px;
+}
+
+.wrapper {
+	margin-top:5px;
+}
+
+/* Top Nav */
+
+nav {
+	padding:2px;
+	background-color:#404040;
+	padding-left:10px;
+	cursor:default;
+	position:fixed;
+	width:100%;
+	z-index:3;
+}
+
+nav img {
+	width:17px;
+	padding:2px 2px 0 2px;
+	cursor:pointer;
+}
+
+
+.bottom {
+	width:100%;
+	display:block;
+	background-color:white;
+	position:fixed;
+	bottom:0;
+	z-index:3;
+	border-style: solid none solid none;
+	border-width: thin;
+
+}
+
+.bottom #title, .bottom #mode {
+	font-size:15px;
+	color:black;
+	font-family:sans-serif;
+	top:-8px;
+}
+
+.bottom #mode {
+	right:10px;
+}
+
+.bottom img {
+	width:22px;
+	top:0;
+	margin:4px 0 -2px -8px;
+}
+
+/* Flash */
+
+.flash {
+	animation: flash 0.3s ease-in-out;
+}
+
+.tray{
+    background: white;
+    min-height: 450px;
+}
+
+.tray .tabs .indicator{
+	background-color: green;
+}
+
+.tray .collection {
+	margin: 0rem 0 0rem 0;
+}
+
+.tray .collection .collection-item.avatar .circle{
+	width: 27px;
+	height: 27px;
+	line-height:31px;
+}
+
+.tray .collection .collection-item.avatar{
+	min-height: 35px
+}
+
+.tray .row{
+	margin-bottom: 0px;
+}
+.tray .collection .collection-item{
+    border-bottom:none;
+}
+
+.collection .collection-item:last-child{
+    border-bottom:none;
+}
+
+.bottom .collection .collection-item{
+    padding: 0;
+}
+#test-swipe-1 {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; //Enables inertia scroll on webkit mobile browsers
+}
+
+@keyframes flash {
+	0%     {background-color:#404040;}
+    100%  {background-color:#606060;}
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons.green600 { color: #3e764f; }

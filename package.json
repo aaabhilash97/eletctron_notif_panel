@@ -1,0 +1,23 @@
+{
+  "name": "custom_right_click_context_menu_for_electron",
+  "version": "0.0.1",
+  "description": "Dropbox like custom tray icon window for electron application",
+  "main": "main.js",
+  "dependencies": {
+    "electron-packager": "^8.1.0",
+    "materialize-css": "^0.98.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "tray",
+    "notification",
+    "window"
+  ],
+  "author": "Abhilash Km",
+  "license": "ISC"
+}
